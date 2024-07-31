@@ -1,11 +1,12 @@
 // src/App.jsx
 import React from 'react';
-import Students from './Students';
+import Books from './Books';
+import './App.css'; // Import the CSS file
 
 const App = () => {
   return (
     <div className="App">
-      <Students />
+      <Books />
     </div>
   );
 };
