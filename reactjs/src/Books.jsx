@@ -12,17 +12,18 @@ const Books = () => {
     return randomDate.toLocaleDateString();
   };
 
+  
   const initialBooks = [
-    { title: 'Book 1', author: 'John', dueDate: generateRandomDate(), status: 'Checked Out' },
-    { title: 'Book 2', author: 'Jane', dueDate: generateRandomDate(), status: 'Checked Out' },
-    { title: 'Book 3', author: 'Mike', dueDate: generateRandomDate(), status: 'Checked Out' },
-    { title: 'Book 4', author: 'Lisa', dueDate: generateRandomDate(), status: 'Checked Out' },
-    { title: 'Book 5', author: 'John', dueDate: generateRandomDate(), status: 'Checked Out' },
-    { title: 'Book 6', author: 'Jane', dueDate: generateRandomDate(), status: 'Checked Out' },
-    { title: 'Book 7', author: 'Mike', status: 'Available' },
-    { title: 'Book 8', author: 'Lisa', status: 'Available' },
-    { title: 'Book 9', author: 'John', status: 'Available' },
-    { title: 'Book 10', author: 'Jane', status: 'Available' }
+    { title: 'Harry Potter ', author: 'J.K. Rowling', dueDate: generateRandomDate(), status: 'Checked Out' },
+    { title: 'The Shining', author: 'Stephen King', dueDate: generateRandomDate(), status: 'Checked Out' },
+    { title: 'Murder on the Orient Express, And Then There Were None', author: 'Agatha Christie', dueDate: generateRandomDate(), status: 'Checked Out' },
+    { title: 'Pride and Prejudice, Sense and Sensibility', author: 'Jane Austen', dueDate: generateRandomDate(), status: 'Checked Out' },
+    { title: 'The Da Vinci Code, Angels & Demons', author: 'Dan Brown', dueDate: generateRandomDate(), status: 'Checked Out' },
+    { title: 'The Old Man and the Sea, A Farewell to Arms', author: 'Ernest Hemingway', dueDate: generateRandomDate(), status: 'Checked Out' },
+    { title: 'Norwegian Wood, Kafka on the Shore', author: 'Haruki Murakami', status: 'Available' },
+    { title: 'he Lord of the Rings series, The Hobbit', author: 'J.R.R. Tolkien', status: 'Available' },
+    { title: 'The Handmaids Tale, Oryx and Crake', author: 'Margaret Atwood', status: 'Available' },
+    { title: 'A Song of Ice and Fire series (Game of Thrones)', author: 'George R.R. Martin', status: 'Available' }
   ];
 
   const [books, setBooks] = useState(initialBooks);
